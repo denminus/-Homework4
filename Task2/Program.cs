@@ -33,6 +33,8 @@ int value =ReadInt("Введите искомое число: ");
 int[] massiv= CreateArray (size, min,max);
 Console.Write("Ваш массив: ");
 PrintArray(massiv);
+
+
 int search =0;
 for (int i=0; i< massiv.Length; i++) 
 
