@@ -15,12 +15,7 @@ int[] CreateArray (int size, int min, int max)
 }
 
 
-void Swap<T> (ref T first, ref T second) 
-{ 
-    T tmp =first;
-    first = second;
-    second = tmp;
-}
+
 
 int ReadInt(string message)
 {
@@ -33,10 +28,7 @@ int min =ReadInt("Для задания массива введите меньш
 int max =ReadInt("Для задания массива введите большую часть диапазона: ");
 int value =ReadInt("Введите искомое число: ");
 
-if (min>max)
-{
-    Swap(ref min, ref max);
-}
+
 
 int[] massiv= CreateArray (size, min,max);
 Console.Write("Ваш массив: ");
